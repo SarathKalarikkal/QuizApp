@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Quiz App</title>
+</head>
+<body>
+  <h1 id="quiz-title">Test Your Knowledge</h1>
+    <section id="start-section" >
+         <div class="start">
+            <p>Start Quiz</p>
+         </div>
+    </section>
+   <section id="instruction-box" >
+      <div class="instruction-heading">
+        <h1>Some rules of this Quiz</h1>
+      </div>
+      <div class="rules">
+        <p>1. You will have <span>15 seconds</span> per each questions.</p>
+        <p>2. Once you selet your answer, it can't be undone</p>
+        <p>3. You can't select any option once time goes off.</p>
+        <p>4. You can't exit from the Quiz while you're playing</p>
+        <p>5. You'll get points on the basis of your correct ansawers.</p>
+      </div>
+      <div class="instruction-buttons">
+        <button id="exit">Exit Quiz</button>
+        <button id="continue">Continue</button>
+      </div>
+   </section>
+
+   <section id="question-box" class="">
+
+    <div class="question-heading">
+      <h1>Awesome Quiz application</h1>
+      <div class="time-box">
+        <p class="time-txt">Time left</p>
+        <div>
+          <span id="time">0</span>
+        </div>
+      </div>
+      <div class="time_line"></div>
+    </div>
+    <div class="questions-area">
+      <h1 class="qstn"></h1>
+      <div class="options">
+
+      </div>
+    </div>
+    <div class="qstn-footer">
+      <p></p>
+      <button id="nxt-qstBtn">Next Question</button>
+    </div>
+
+ </section>
+   <section id="result-box">
+    <div class="result-icon"></div>
+      <!-- <i class="fa-solid fa-crown"></i> -->
+     <div>
+
+     </div>
+     <div class="user-Score">
+      <p>You're completed the Quiz!</p>
+      <div id="score-text"></div>
+     </div>
+     <div class="buttons">
+      <button class="restart">Replay Quiz</button>
+      <button class="quit">Quit Quiz</button>
+     </div>
+   </section>
+    <script src="main.js"></script>
+    <script src="questions.js"></script>
+    <script src="fetch.js"></script>
+</body>
+</html>
